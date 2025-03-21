@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat with Gemini</title>
+</head>
+<body>
+    <h1>Chat with Gemini</h1>
+    <form method="POST">
+        <label for="user_input">Your Input:</label><br>
+        <input type="text" id="user_input" name="user_input" style="width: 500px;"><br><br>
+        <label for="filepath">Excel File Path (Optional):</label><br>
+        <input type="text" id="filepath" name="filepath" style="width: 500px;"><br><br>
+        <input type="submit" value="Send">
+    </form>
+    <hr>
+    <h2>Response:</h2>
+    <div style="white-space: pre-wrap;">{{ response }}</div>
+</body>
+</html>
